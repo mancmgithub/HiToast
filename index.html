@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no,minimum-scale=1.0, maximum-scale=1.0">
+	<title>HiToast</title>
+	<style type="text/css">
+		.toast {
+			padding: 15px;
+			margin-bottom: 20px;
+			border: 1px solid #eed3d7;
+			border-radius: 4px;
+			position: absolute;
+			bottom: 0px;
+			right: 21px;
+			float: right;
+			clear: right;
+		}
+
+		.toast-Error {
+			color: white;
+			background-color: #DA4453;
+		}
+		.toast-Success {
+			color: white;
+			background-color: #37BC9B;
+		}
+		.toast-Info {
+			color: white;
+			background-color: #4A89DC;
+		}
+		.toast-Waring {
+			color: white;
+			background-color: #F6BB42;
+		}
+	</style>
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="hitoast.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("#cc").on('click', function() {
+				hiToast("nihao");
+			});	
+		});
+	</script>
+</head>
+<body>
+	<h1>HITOAST</h1>
+	<p>
+         <strong>A simple notification library similar to Toast designed to be used in mobile apps.</strong>
+      </p>
+	<button id="cc">弹框</button>
+	<div id="hitoast"></div>
+</body>
+</html>
