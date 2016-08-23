@@ -29,13 +29,27 @@ function hiToast(text,options) {
 
 	var $container = $('#' + options['container-id']),
 	thems_markup = '';
+
 	if (options.thems) {
-		thems_markup = '-' + options.thems;
+		thems_markup = 'toast-' + options.thems;
 	}
 
-	var html = $('<div class="toast' + thems_markup + '">' + text + '</div>').fadeIn(options['fade-time']);
+	var html = $('<div class="toast  ' + thems_markup + '">' + text + '</div>').fadeIn(options['fade-time']);
 	
 	$container.append(html);
+
+	var width = ($(window).width() / 2- $(".toast").outerWidth() /2) +"px";
+	var height = '20px';
+	if (options.position == 'top') {
+		height = ($(window).height() * 1 / 5- $(".toast").outerHeight() /2) +"px";
+	}else if (options.position == 'center') {
+		height = ($(window).height() / 2 - $(".toast").outerHeight() /2) +"px";
+	}else if (options.position == 'bottom') {
+		height = ($(window).height() * 4 / 5- $(".toast").outerHeight() /2) +"px";
+	}
+	
+	$(".toast").css("left",width) ;
+	$(".toast").css("top",height) ;
 
 	html.on('click', function() {
 		hiToastX($(this));

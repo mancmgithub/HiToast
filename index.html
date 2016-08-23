@@ -5,16 +5,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no,minimum-scale=1.0, maximum-scale=1.0">
 	<title>HiToast</title>
 	<style type="text/css">
+		/*body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td { margin:0; padding:0; }*/
+		
 		.toast {
-			padding: 15px;
-			margin-bottom: 20px;
+			padding: 5px 15px;
 			border: 1px solid #eed3d7;
 			border-radius: 4px;
-			position: absolute;
-			bottom: 0px;
-			right: 21px;
-			float: right;
-			clear: right;
+			position: fixed;
+			height: 20px;
 		}
 
 		.toast-Error {
@@ -39,7 +37,7 @@
 	<script type="text/javascript">
 		$(document).ready(function() {
 			$("#cc").on('click', function() {
-				hiToast("nihao");
+				hiToast("nihao",{thems:'Waring',position:'center'});
 			});	
 		});
 	</script>
@@ -47,9 +45,9 @@
 <body>
 	<h1>HITOAST</h1>
 	<p>
-         <strong>A simple notification library similar to Toast designed to be used in mobile apps.</strong>
-      </p>
-	<button id="cc">弹框</button>
+		<strong>A simple notification library similar to Toast designed to be used in mobile apps.</strong>
+	</p>
+	<center><button id="cc">弹框</button></center>
 	<div id="hitoast"></div>
 </body>
 </html>
