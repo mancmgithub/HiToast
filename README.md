@@ -36,28 +36,28 @@ Toast are automatically bound to a click event and hiToastX() is called when the
 
 ## Styling:
 Before using , please add the following styles to your CSS file :
-	.toast {
-			padding: 5px 15px;
-			border: 1px solid #eed3d7;
-			border-radius: 4px;
-			position: fixed;
-			height: 20px;
+
+	.toast {	
+		padding: 5px 15px;
+		border: 1px solid #eed3d7;
+		border-radius: 4px;
+		position: fixed;height: 20px;
 	}
 	.toast-Error {
-			color: white;
-			background-color: #DA4453;
+		color: white;
+		background-color: #DA4453;
 	}
 	.toast-Success {
-			color: white;
-			background-color: #37BC9B;
+		color: white;
+		background-color: #37BC9B;
 	}
 	.toast-Info {
-			color: white;
-			background-color: #4A89DC;
+		color: white;
+		background-color: #4A89DC;
 	}
 	.toast-Waring {
-			color: white;
-			background-color: #F6BB42;
+		color: white;
+		background-color: #F6BB42;
 	}
 
 ##Demo
