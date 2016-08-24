@@ -14,8 +14,9 @@ Dependency: [jQuery](http://jquery.com/) or [Zepto](http://zeptojs.com/).
 
 Download HiToast.js:
 - from [GitHub](https://github.com/hicoldcat/HiToast/blob/master/hitoast.js)
-- with Npm : 
-- with Bower:
+- with Npm :  
+
+	npm install hitoast.js
 
 Add a div.hitoast which will contain the alerts :
 
@@ -64,6 +65,6 @@ Before using , please add the following styles to your CSS file :
 
 You can see a [demo](https://hicoldcat.github.io/HiToast/) here.
 
-## 贡献
+## Contribution
 
-如果你有好的意见或建议，欢迎给我提issue或pull request.
+If you have good comments or suggestions, please give me a issue or pull request. 
